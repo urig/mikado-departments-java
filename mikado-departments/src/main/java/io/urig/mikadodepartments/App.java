@@ -1,13 +1,10 @@
 package io.urig.mikadodepartments;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+public class App {
+	public static void main(String[] args) {
+		User user = new User(new Brand());
+		Brand brand = user.getBrand();
+		System.out.println(brand.getPhone());
+		System.out.println(brand.getEmailAddress());
+	}
 }
